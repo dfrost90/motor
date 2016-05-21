@@ -1,0 +1,67 @@
+.post {
+  position: relative;
+  padding: 24px 28px;
+  margin: 24px 0;
+  
+  background-color: @color-post;
+  box-shadow: 1px 1px 3px 0px @color-2;
+
+  @media (min-width: @screen-s) {
+    padding: 48px 96px;
+  }
+}
+
+.post-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+
+  &__link {
+    color: @color-text;
+    text-decoration: none;
+
+    transition: color 0.2s;
+
+    &:hover {
+      color: @color-accent;
+      text-decoration: none;      
+    }
+  }
+}
+
+.post-info {
+  margin: 4px 0 16px;
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    
+    font-size: 12px;
+    color: @color-muted;
+
+    text-decoration: none;
+
+    & + & {
+      margin-left: 4px;
+
+      &:before {
+        display: inline-block;
+        content: "|";
+        padding-right: 8px;
+      }
+    }
+  }
+}
+
+.post-img {
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.post-content {
+  margin: 16px 0;
+  line-height: 1.6;
+  font-family: 'Droid Serif', serif;
+}

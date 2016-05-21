@@ -1,0 +1,63 @@
+// ............................................................
+// .for
+
+.for(@i, @n) {.-each(@i)}
+.for(@n)     when (isnumber(@n)) {.for(1, @n)}
+.for(@i, @n) when not (@i = @n)  {
+    .for((@i + (@n - @i) / abs(@n - @i)), @n);
+}
+
+// ............................................................
+// .for-each
+
+.for(@array)   when (default()) {.for-impl_(length(@array))}
+.for-impl_(@i) when (@i > 1)    {.for-impl_((@i - 1))}
+.for-impl_(@i) when (@i > 0)    {.-each(extract(@array, @i))}
+
+.long-shadow(@type, @color, @length, @fadeout: true, @scew: false, @direction: right) {
+    .-() {
+        @dir:  1px;
+        @offset: 0;
+        @s: .5px * @i;
+        @a: 1 - @i / @length;
+        @c: fade(@color, 100% * alpha(@color) * @a * @a);
+    }
+    .-() when (@direction = left) {@dir: -1px}
+    .-() when (@type = box)       {@offset: 1}
+    .-() when (@scew = false)     {@s: ;}
+    .-() when (@type = text)      {@s: ;}
+    .-() when (@fadeout = false)  {@c: @color}
+
+    .for(0, @length - 1); .-each(@i) {
+        .-();
+        @x: @dir * (@i + @offset);
+        @y: 1px  * (@i + @offset);
+        @{type}-shadow+: @x @y 0 @s @c;
+    }
+}
+
+.placeholder(@params) {
+    &::-webkit-input-placeholder {
+        @params();
+    }
+    &:-moz-placeholder {
+        @params();
+    }
+    &::-moz-placeholder {
+        @params();
+    }
+    &:-ms-input-placeholder {
+        @params();
+    }
+}
+
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

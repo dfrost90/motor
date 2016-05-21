@@ -1,0 +1,43 @@
+{
+  "name": "uawebchallenge042016",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "imagesloaded": "^4.1.0",
+    "jquery": "^2.2.2",
+    "jquery-bridget": "^2.0.0",
+    "masonry-layout": "^4.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "browser-sync": "^2.11.1",
+    "browserify": "^13.0.0",
+    "css-mqpacker": "^4.0.1",
+    "del": "^2.2.0",
+    "fancybox": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-iconfont": "^6.0.0",
+    "gulp-iconfont-css": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-less": "^3.0.5",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "imagemin-pngquant": "^4.2.2",
+    "normalize.css": "^4.0.0",
+    "postcss-import": "^8.0.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
