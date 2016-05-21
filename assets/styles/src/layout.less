@@ -7,7 +7,10 @@
 }
 
 .content {
+  float: right;
   overflow: hidden;
+  width: 80%;
+  padding: 24px 0;
 }
 
 .container {
@@ -15,7 +18,16 @@
   margin: 0 auto;
   max-width: 100%;
 
-  @media (min-width: @screen-s) {
-    width: 800px;
+  @media (min-width: @screen-m) {
+    max-width: 980px;
+  }
+}
+
+.s-block {
+  padding: 24px;
+  background-color: @color-sidebar;
+
+  & + & {
+    margin-top: 12px;
   }
 }
