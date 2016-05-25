@@ -1,0 +1,33 @@
+.header {
+  text-align: center;
+  background-image: url('../../images/dist/header.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.content {
+  float: right;
+  overflow: hidden;
+  width: 80%;
+  padding: 24px 0;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 100%;
+
+  @media (min-width: @screen-m) {
+    max-width: 980px;
+  }
+}
+
+.s-block {
+  padding: 24px;
+  background-color: @color-sidebar;
+
+  & + & {
+    margin-top: 12px;
+  }
+}

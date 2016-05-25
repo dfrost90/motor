@@ -4,7 +4,6 @@
 
     <!-- Don't validate not our code -->
     <exclude-pattern>/node_modules/*</exclude-pattern>
-    <exclude-pattern>/tests/*</exclude-pattern>
     <exclude-pattern>/vendor/*</exclude-pattern>
 
     <!-- Ignore all assets -->
@@ -15,18 +14,10 @@
     <!-- Strange but without this, nothing works. -->
     <rule ref="vendor/wp-coding-standards/wpcs/WordPress/Sniffs/Arrays/ArrayDeclarationSniff.php"/>
 
-	<!-- WordPress Core + Docs + Extra Code Style -->
+	<!-- WordPress Core + Docs + Extra Code Style + WordPress-VIP-->
 	<rule ref="vendor/wp-coding-standards/wpcs/WordPress-Core" />
 	<rule ref="vendor/wp-coding-standards/wpcs/WordPress-Docs" />
 	<rule ref="vendor/wp-coding-standards/wpcs/WordPress-Extra" />
-
-	<!-- WordPress-VIP -->
-	<rule ref="vendor/wp-coding-standards/wpcs/WordPress-VIP">
-		<!-- Ignore -->
-		<exclude name="WordPress.VIP.RestrictedFunctions" />
-		<exclude name="WordPress.VIP.DirectDatabaseQuery" />
-		<exclude name="WordPress.VIP.SuperGlobalInputUsage" />
-		<!-- END Ignore -->
-	</rule>
+	<rule ref="vendor/wp-coding-standards/wpcs/WordPress-VIP" />
 
 </ruleset>

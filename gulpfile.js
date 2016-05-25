@@ -92,4 +92,4 @@ gulp
   .task('build', function () {
 
   })
-  .task('default', ['clean', 'styles']);
+  .task('default', ['clean', 'styles', 'scripts']);
