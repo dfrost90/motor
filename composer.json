@@ -1,7 +1,7 @@
 {
 	"name": "wp/motor",
 	"description": "Another WordPress theme.",
-	"license": "MIT",
+	"license": "GPLv2",
 	"authors": [
 		{
 			"name": "Aleksey Motovilov",
@@ -9,7 +9,6 @@
 		}
 	],
 	"require": {
-		"php": ">=5.5.0",
 		"wp-coding-standards/wpcs": "dev-master"
 	}
 }

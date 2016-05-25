@@ -82,3 +82,8 @@ if ( ! function_exists( 'motor_assets' ) ) :
 		wp_enqueue_script( 'motor-main' );
 	}
 endif;
+
+/**
+ * Custom template function.
+ */
+require( get_template_directory() . '/includes/template-tags.php' );
