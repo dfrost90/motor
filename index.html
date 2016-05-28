@@ -13,83 +13,219 @@
 </head>
 <body>
 
-  <!-- <header class="header">
+  <header class="header">
     <div class="container">
-      <a href="/" class="logo"><img src="assets/images/dist/dfrost.svg" alt=""></a>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__list-item"><a href="/" class="navigation__link active">Blog</a></li>
-          <li class="navigation__list-item"><a href="/" class="navigation__link">RandomFun</a></li>
-          <li class="navigation__list-item"><a href="/" class="navigation__link">About</a></li>
-        </ul>
-      </nav>
+
+      <div class="header__wrap">
+        <div class="logo">
+          <a href="/"><img src="assets/images/dist/motor.svg" alt="MOTOR"></a>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__item-link">Home</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__item-link">Page</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__item-link">Post</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__item-link">Category</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__item-link">Archive</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </header> -->
+  </header>
 
   <div class="container">
     <main class="content">
       <article class="post">
         <header class="post__header">
-          <h2 class="post-title"><a class="post-title__link" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+          <h2 class="post__title"><a class="post__title-link" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+          <div class="post__img">
+            <a href="#" class="post__img-link"><img src="http://lorempixel.com/1280/600/transport/" alt=""></a>
+          </div>
+          <div class="post__info">
+            <a href="#" class="post__info-item category">Uncategorized</a>
+            <a href="#" class="post__info-item date">01 March 2016</a>
+          </div>
         </header>
-        <div class="post-info">
-          <a href="#" class="post-info__item category">Uncategorized</a>
-          <a href="#" class="post-info__item date">01 March 2016</a>
+        <div class="post__content">
+          <p class="post__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, non repudiandae facere adipisci beatae voluptatum ipsum rem perferendis dolorem, eaque, aliquid odit. Quia eveniet incidunt dicta quasi dignissimos officia nobis.
+          </p>
+          <button type="button" class="button button--primary">Read more</button>
         </div>
-        <div class="post-img">
-          <img src="http://lorempixel.com/800/600/food/" alt="">
+      </article>
+      <div class="related">
+        <button type="button" class="carousel-button carousel-button--left">
+          <div class="carousel-button__form carousel-button__form--left"><i class="icon-chevron-left"></i></div>
+        </button>
+        <button type="button" class="carousel-button carousel-button--right">
+          <div class="carousel-button__form carousel-button__form--right"><i class="icon-chevron-right"></i></div>
+        </button>
+        <ul class="related-list">
+          <li class="related-list__item">
+            <article class="s-post">
+              <a href="#" class="s-post__link-wrap">
+                <div class="s-post__img">
+                  <a href="#" class="button button--primary s-post__button">Read more</a>
+                  <img src="http://lorempixel.com/800/600/nightlife/" alt="">
+                </div>
+                <h4 class="s-post-title">Lorem ipsum dolor sit amet, consectetur.</h4>
+              </a>
+            </article>
+          </li>
+          <li class="related-list__item">
+            <article class="s-post">
+              <a href="#" class="s-post__link-wrap">
+                <div class="s-post__img">
+                  <a href="#" class="button button--primary s-post__button">Read more</a>
+                  <img src="http://lorempixel.com/800/600/business/" alt="">
+                </div>
+                <h4 class="s-post-title">Lorem ipsum dolor sit.</h4>
+              </a>
+            </article>
+          </li>
+          <li class="related-list__item">
+            <article class="s-post">
+              <a href="#" class="s-post__link-wrap">
+                <div class="s-post__img">
+                  <a href="#" class="button button--primary s-post__button">Read more</a>
+                  <img src="http://lorempixel.com/800/600/technics/" alt="">
+                </div>
+                <h4 class="s-post-title">Lorem ipsum dolor sit amet.</h4>
+              </a>
+            </article>
+          </li>
+          <li class="related-list__item">
+            <article class="s-post">
+              <a href="#" class="s-post__link-wrap">
+                <div class="s-post__img">
+                  <a href="#" class="button button--primary s-post__button">Read more</a>
+                  <img src="http://lorempixel.com/800/600" alt="">
+                </div>
+                <h4 class="s-post-title">Lorem ipsum dolor sit.</h4>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </div>
+      <article class="post">
+        <header class="post__header">
+          <h2 class="post__title"><a class="post__title-link" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+          <div class="post__img">
+            <a href="#" class="post__img-link"><img src="http://lorempixel.com/1280/600/people/" alt=""></a>
+          </div>
+          <div class="post__info">
+            <a href="#" class="post__info-item category">Uncategorized</a>
+            <a href="#" class="post__info-item date">01 March 2016</a>
+          </div>
+        </header>
+        <div class="post__content">
+          <p class="post__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, non repudiandae facere adipisci beatae voluptatum ipsum rem perferendis dolorem, eaque, aliquid odit. Quia eveniet incidunt dicta quasi dignissimos officia nobis.
+          </p>
+          <button type="button" class="button button--primary">Read more</button>
         </div>
-        <div class="post-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, non repudiandae facere adipisci beatae voluptatum ipsum rem perferendis dolorem, eaque, aliquid odit. Quia eveniet incidunt dicta quasi dignissimos officia nobis.
-        </div>
-        <button type="button" class="button button--primary">Read more</button>
       </article>
       <article class="post">
         <header class="post__header">
-          <h2 class="post-title"><a class="post-title__link" href="#">Lorem ipsum dolor sit amet, consectetur.</a></h2>
+          <h2 class="post__title"><a class="post__title-link" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+          <div class="post__img">
+            <a href="#" class="post__img-link"><img src="http://lorempixel.com/1280/600/city/" alt=""></a>
+          </div>
+          <div class="post__info">
+            <a href="#" class="post__info-item category">Uncategorized</a>
+            <a href="#" class="post__info-item date">01 March 2016</a>
+          </div>
         </header>
-        <div class="post-info">
-          <a href="#" class="post-info__item category">Uncategorized</a>
-          <a href="#" class="post-info__item date">01 March 2016</a>
+        <div class="post__content">
+          <p class="post__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, non repudiandae facere adipisci beatae voluptatum ipsum rem perferendis dolorem, eaque, aliquid odit. Quia eveniet incidunt dicta quasi dignissimos officia nobis.
+          </p>
+          <button type="button" class="button button--primary">Read more</button>
         </div>
-        <div class="post-img">
-          <img src="http://lorempixel.com/800/600" alt="">
-        </div>
-        <div class="post-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, non repudiandae facere adipisci beatae voluptatum ipsum rem perferendis dolorem, eaque, aliquid odit. Quia eveniet incidunt dicta quasi dignissimos officia nobis.
-        </div>
-        <button type="button" class="button button--primary">Read more</button>
       </article>
+      <div class="related">
+        <button type="button" class="carousel-button carousel-button--left">
+          <div class="carousel-button__form carousel-button__form--left"><i class="icon-chevron-left"></i></div>
+        </button>
+        <button type="button" class="carousel-button carousel-button--right">
+          <div class="carousel-button__form carousel-button__form--right"><i class="icon-chevron-right"></i></div>
+        </button>
+        <ul class="related-list">
+          <li class="related-list__item">
+            <article class="s-post">
+              <a href="#" class="s-post__link-wrap">
+                <div class="s-post__img">
+                  <a href="#" class="button button--primary s-post__button">Read more</a>
+                  <img src="http://lorempixel.com/800/600/animals/" alt="">
+                </div>
+                <h4 class="s-post-title">Lorem ipsum dolor sit amet, consectetur.</h4>
+              </a>
+            </article>
+          </li>
+          <li class="related-list__item">
+            <article class="s-post">
+              <a href="#" class="s-post__link-wrap">
+                <div class="s-post__img">
+                  <a href="#" class="button button--primary s-post__button">Read more</a>
+                  <img src="http://lorempixel.com/800/600/sports/" alt="">
+                </div>
+                <h4 class="s-post-title">Lorem ipsum dolor sit.</h4>
+              </a>
+            </article>
+          </li>
+          <li class="related-list__item">
+            <article class="s-post">
+              <a href="#" class="s-post__link-wrap">
+                <div class="s-post__img">
+                  <a href="#" class="button button--primary s-post__button">Read more</a>
+                  <img src="http://lorempixel.com/800/600/city/" alt="">
+                </div>
+                <h4 class="s-post-title">Lorem ipsum dolor sit amet.</h4>
+              </a>
+            </article>
+          </li>
+          <li class="related-list__item">
+            <article class="s-post">
+              <a href="#" class="s-post__link-wrap">
+                <div class="s-post__img">
+                  <a href="#" class="button button--primary s-post__button">Read more</a>
+                  <img src="http://lorempixel.com/800/600/cats/" alt="">
+                </div>
+                <h4 class="s-post-title">Lorem ipsum dolor sit.</h4>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </div>
       <article class="post">
         <header class="post__header">
-          <h2 class="post-title"><a class="post-title__link" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolores accusantium dolor blanditiis!</a></h2>
+          <h2 class="post__title"><a class="post__title-link" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+          <div class="post__img">
+            <a href="#" class="post__img-link"><img src="http://lorempixel.com/1280/600/fashion/" alt=""></a>
+          </div>
+          <div class="post__info">
+            <a href="#" class="post__info-item category">Uncategorized</a>
+            <a href="#" class="post__info-item date">01 March 2016</a>
+          </div>
         </header>
-        <div class="post-info">
-          <a href="#" class="post-info__item category">Uncategorized</a>
-          <a href="#" class="post-info__item date">01 March 2016</a>
+        <div class="post__content">
+          <p class="post__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, non repudiandae facere adipisci beatae voluptatum ipsum rem perferendis dolorem, eaque, aliquid odit. Quia eveniet incidunt dicta quasi dignissimos officia nobis.
+          </p>
+          <button type="button" class="button button--primary">Read more</button>
         </div>
-        <div class="post-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, non repudiandae facere adipisci beatae voluptatum ipsum rem perferendis dolorem, eaque, aliquid odit. Quia eveniet incidunt dicta quasi dignissimos officia nobis.
-        </div>
-        <button type="button" class="button button--primary">Read more</button>
       </article>
     </main>
-    <div class="sidebar">
-      <div class="s-block">
-        <a href="/" class="logo"><img src="assets/images/dist/motor.svg" alt=""></a>
-      </div>
-
-      <div class="s-block">
-        <nav class="secondary-nav">
-          <ul class="secondary-nav__list">
-            <li class="secondary-nav__list-item"><a href="#" class="secondary-nav__link active">Home</a></li>
-            <li class="secondary-nav__list-item"><a href="/" class="secondary-nav__link">Blog</a></li>
-            <li class="secondary-nav__list-item"><a href="/" class="secondary-nav__link">RandomFun</a></li>
-            <li class="secondary-nav__list-item"><a href="/" class="secondary-nav__link">About</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
   </div>
 
   <script src="assets/scripts/dist/main.js"></script>

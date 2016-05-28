@@ -1,0 +1,142 @@
+.related {
+  position: relative;
+  overflow: hidden;
+  margin: 24px 0 40px;
+
+  background-color: @color-post;
+  box-shadow: 0 0 42px 0px fade(@color-dark, 83%);
+
+  &:hover .carousel-button {
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+}
+
+.related-list {
+  list-style: none;
+  padding: 20px;
+  margin: 0 0 0 -20px;
+  font-size: 0;
+  white-space: nowrap;
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    width: 230px;
+    margin-left: 20px;
+  }
+}
+
+.carousel-button {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  font-size: 0;
+  z-index: 2;
+  outline: none;
+  transition: left .2s .2s, right .2s .2s, background-image .2s .2s;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0;
+  }
+
+  &--left {
+    left: 0px; // -50px
+    background-image: linear-gradient(to left, transparent 0%, @color-light 91%);
+  }
+
+  &--right {
+    right: 0px; // -50px
+    background-image: linear-gradient(to right, transparent 0%, @color-light 91%);
+  }
+
+  &__form {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    line-height: 100px;
+    height: 100px;
+    font-size: 24px;
+    text-align: center;
+
+    color: @color-light;
+    background-color: @color-accent;
+
+    &--left {
+      padding-right: 8px;
+      border-radius: 0 50px 50px 0;
+    }
+
+    &--right {
+      padding-left: 8px;
+      border-radius: 50px 0 0 50px;
+    }
+  }
+}
+
+.s-post {
+  font-size: 16px;
+
+  &__img {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      display: block;
+
+      transform: scale(1);
+      transition: transform 1s ease-in-out;
+
+      .s-post:hover & {
+        transform: scale(1.09);
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.15);
+    transition: opacity .2s, transform .2s;
+
+    &:hover {
+      background-color: @color-light;
+    }
+
+    .s-post:hover & {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+
+  &__link-wrap {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.s-post-title {
+  margin: 12px 0 0;
+  color: @color-text;
+
+  .s-post__link-wrap:hover & {
+    color: @color-accent;
+  }
+}
