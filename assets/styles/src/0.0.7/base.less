@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: @color-body-background;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+
+  a & {
+    display: block;
+  }
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+.main {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.text-small {
+  line-height: 24px;
+}
+
+.title-link {
+  color: @color-title;
+  text-decoration: none;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 160%;
+  margin-right: 2px;
+
+  &--category {
+    font-size: 100%;
+  }
+}
