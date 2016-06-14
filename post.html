@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>motor Main Template</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Exo+2:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="assets/styles/dist/main.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="/" class="logo">
+      <img class="logo__img" src="./assets/images/dist/motor.svg" alt="logo">
+    </a>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a class="nav__link" href="#">Cats</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" href="#">Dogs</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" href="#">NSFW</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" href="#">Video</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="main">
+    <div class="flex">
+
+      <div class="flex__row">
+        <div class="flex__item flex__item--big">
+          <article class="post">
+            <header class="post__header">
+              <h1 class="title-big">Lorem ipsum dolor sit amet</h1>
+            </header>
+            <div class="post__content">
+              <img src="./assets/images/dist/TVG (614).jpg" alt="some image">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore voluptatum nulla, illum natus debitis, quasi, odit earum animi temporibus reiciendis voluptatem beatae similique? Eveniet distinctio reprehenderit alias, sed sint est.
+              </p>
+              <p>
+                Есть несколько отличительных особенностей производителя, наличие которых причисляет компанию к премьер-лиге WiFi, вне всяких сомнения и вопреки козням конкурентов. И одна из них – это способность к уcпешной реализации так называемых High Density (HD) проектов. High Density — это когда на ограниченном пространстве собирается очень большое количество людей и почти каждому из них нужен качественный доступ в Интернет (например, WiFi на стадионе тысяч на 80 человек). Чтобы понять всю сложность этой задачи, нужно вспомнить школьную физику и такое ее понятие, как Интерференция. Еще нужно вспомнить, что радиоресурс – это вещь конечная и ограниченная. Мало того, в WiFi эта вещь еще и разделяемая. То есть, буквально, у вас есть два диапазона (2.4 и 5ГГц) и в каждом диапазоне прописан четкий набор радиоканалов (1, 6, 11 и др.) определенной ширины (20, 40, 80 и 160 Mhz) (для тех, кому интересно глубже в теорию — сюда), каждый из которых, в зависимости от типа модуляции, дает вам определенную полосу пропускания в Мбит/с и которая не может быть больше by design. Это означает, что вся WiFi инфраструктура разделяет между собой этот конечный набор радиоканалов и выступает арбитром доступа пользователей к этой общей среде. Здесь нельзя подвести каждому пользователю одну и ту же несущую по экранированной медной паре, как в Ethernet. И здесь огромную роль играет та самая интерференция, во всех видах. Пользователи начинают «глушить» друг друга за счет интерференции на границах диапазонов, за счет размещения на одном канале на соседних точках, данные начинают скапливаться в буферах… в конечном итоге, сеть как следует не работает.
+              </p>
+              <img src="./assets/images/dist/TVG (606).jpg" alt="some image">
+              <p>
+                Вывод простой – успешно сделать HD WiFi может только компания, которая действительно понимает, как работают современные WiFi сети, у которой есть люди, способные спроектировать, внедрить и поддерживать такую инфраструктуру и, самое главное, у которой есть инструменты, из которых можно построить такую инфраструктуру. Поэтому, берусь утверждать, что наличие в портфеле компании таких успешно реализованных проектов (а значит, таких ресурсов и экспертизы) однозначно причисляет ее к премьер-лиге WiFi.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="flex__item">
+          <article class="post-tile">
+            <div class="post-tile__thumb">
+              <img class="post-tile__image" src="./assets/images/dist/TVG%20(618).jpg" alt="">
+            </div>
+            <div class="post-tile__content">
+              <div class="post-category">
+                <a href="#" class="post-category__item">
+                  <i class="icon icon--category icon-adjust"></i>
+                  <span class="post-category__text">category</span>
+                </a>
+              </div>
+              <header class="post-tile__title">
+                <h2 class="title-small"><a href="#" class="title-link">Lorem ipsum dolor sit.</a></h2>
+              </header>
+              <div class="post-tile__text">
+                <p class="text-small">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore velit illum reiciendis quibusdam ab eaque doloribus, odio itaque ullam quia non vel doloremque dolorum necessitatibus animi, assumenda aspernatur repudiandae totam.
+                </p>
+              </div>
+              <div class="post-meta post-meta--content">
+                <a href="#" class="post-meta__item post-meta__item--author">
+                  <i class="icon icon-person_outline"></i>
+                  <span class="post-meta__text">John Doe</span>
+                </a>
+                <a href="#" class="post-meta__item post-meta__item--date">
+                  <i class="icon icon-schedule"></i>
+                  <span class="post-meta__text">2 days ago</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+</div>
+</div>
+  </section>
+
+  <footer class="footer"></footer>
+
+  <script src="assets/scripts/dist/main.js"></script>
+</body>
+</html>

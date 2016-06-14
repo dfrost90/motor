@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="280" height="62" viewBox="0 0 280 62">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 72.1035px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: "FARRAY";
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <text x="-5" y="53" class="cls-1"><tspan class="cls-2">Motor</tspan></text>
+</svg>
